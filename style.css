@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    background-color: #060303;
+}
+
+html,
+body {
+    height: 100vh;
+    font-family: "Source Sans Pro", 'Times New Roman';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+} 
+
+/* HEADER */
+
+header {
+    background-color: black;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 980px;
+    height: 80px;
+    margin: 0;
+}
+
+header nav ul{
+    display: flex;
+    margin: 90%;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 24px;
+    transition: all 250ms linear 0s;
+}
+
+header nav ul li a:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+header .container img{
+    height: 90px;
+    width: 600px;
+    margin: 20%;
+}
+
+/* CHAMATIVO */
+.chamativo-image img{
+    width: 100%;
+}
+
+/* MAIN */
+main {
+    margin-bottom: 100px;
+}
+
+main .container-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 80px auto 0px auto;
+}
+
+h2{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+h3{
+    text-align: center;
+    color: #193EB3;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 10px 0;
+}
+
+p {
+    text-align: justify;
+    font-size: 18px;
+    padding: 5px;
+    color: whitesmoke;
+}
+
+/* VIDEO */
+.ateez-video {
+    display: flex;
+    background-color: black;
+    height: 820px;
+    margin: 80px 0px 0px auto;
+}
+
+.ateez-video iframe {
+    width: 100%;
+    height: 800px;
+}
+
+/* CARDS */
+
+.title-cards {
+    padding: 70px;
+    color: whitesmoke;
+}
+
+.cards-artists {
+    width: 90%;
+    max-width: 990px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.text--medium{
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #193EB3;
+    text-align: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px -4px white;
+    transition: all 0.3s ease 0s;
+}
+
+.card:hover{
+    transform: translateY(-7px);
+}
+
+.image {
+    margin-top: 30px;
+    width: 100%;
+    padding-top: 56%;
+    overflow: hidden;
+    position: relative;
+}
+
+.image img{
+    position: absolute;
+    border-radius: 20px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content {
+    margin:20px;
+}
+
+.title{
+    margin-bottom:0px;
+    font-weight: bold;
+}
+
+/* CARDS DISCOGRAPHY */
+.title-discography {
+    padding: 70px;
+}
+
+.cards-discography {
+    width: 100%;
+    max-width: 990px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.text--medium{
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: rgb(27, 26, 26);
+    text-align: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px -4px #000000;
+    transition: all 0.3s ease 0s;
+}
+
+.card:hover{
+    transform: translateY(-7px);
+}
+
+.image {
+    margin-top: 30px;
+    width: 100%;
+    padding-top: 56%;
+    overflow: hidden;
+    position: relative;
+}
+
+.image img{
+    position: absolute;
+    border-radius: 20px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content {
+    margin:20px;
+}
+
+.content p {
+    color: #193EB3;
+}
+
+.info p {
+    color: white;
+}
+
+.title{
+    margin-bottom:0px;
+    font-weight: bold;
+}
+
+marquee {
+    font-size: 24px;
+    background-color: #193EB3;
+}
+
+marquee a {
+    color: whitesmoke;
+    background-color: #193EB3;
+}
+
+/* FORMULARIO */
+.mensagem {
+    padding: 40px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+form {
+    margin-left: 20%;
+    
+}
+
+form input {
+    width: 380px;
+    padding-left: 15px;
+    font-size: 18px;
+    height: 45px;
+    margin-bottom: 13px;
+    border-radius: 20px;
+    border: 2px solid #193EB3;
+}
+form [type="submit"] {
+    background-color: #193EB3;
+    color: white;
+}
+form [type="submit"]:hover {
+    cursor: pointer;
+}
+
+main .container-main img{
+    width: 600px;
+}
